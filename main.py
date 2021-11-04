@@ -44,13 +44,13 @@ async def test(ctx):
 
 @client.command()
 @commands.has_any_role("ScrimManager")
-async def scrim(ctx, *, msg = "?"):
+async def scrim(ctx):
     if ctx.channel.id == 905900034720145439:
         await ctx.channel.purge(limit=1000)
         check = discord.utils.get(client.emojis, name = "check")
         uncheck = discord.utils.get(client.emojis, name = "uncheck")
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
-        embed=discord.Embed(title=f"Amnesia VS {msg}", description="Disponibilité cochez juste ce qui vous convient", color=0x9814c8)
+        embed=discord.Embed(title=f"Amnesia Contre ???", description="Disponibilité cochez juste ce qui vous convient", color=0x9814c8)
         embed.set_thumbnail(url="https://cdn.discordapp.com/icons/889539720575590401/9c8bc412f1f5111eed5205abb2f5f921.webp?size=96")
         embed.add_field(name="Heure UTC+1", value="**__21 heures 30__**\nLes règles de scrim sont dans <#889546660189970432>", inline=False)
         embed.set_footer(text="Dera©")
@@ -58,7 +58,7 @@ async def scrim(ctx, *, msg = "?"):
         await emb.add_reaction(check)
         await emb.add_reaction(uncheck)
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
-        embed=discord.Embed(title=f"Amnesia VS {msg}", description="Disponibilité cochez juste ce qui vous convient", color=0x9814c8)
+        embed=discord.Embed(title=f"Amnesia Contre ???", description="Disponibilité cochez juste ce qui vous convient", color=0x9814c8)
         embed.set_thumbnail(url="https://cdn.discordapp.com/icons/889539720575590401/9c8bc412f1f5111eed5205abb2f5f921.webp?size=96")
         embed.add_field(name="Heure UTC+1", value="**__22 heures__**\nLes règles de scrim sont dans <#889546660189970432>", inline=False)
         embed.set_footer(text="Dera©")
@@ -66,7 +66,7 @@ async def scrim(ctx, *, msg = "?"):
         await embe.add_reaction(check)
         await embe.add_reaction(uncheck)
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
-        embed=discord.Embed(title=f"Amnesia VS {msg}", description="Disponibilité cochez juste ce qui vous convient", color=0x9814c8)
+        embed=discord.Embed(title=f"Amnesia Contre ???", description="Disponibilité cochez juste ce qui vous convient", color=0x9814c8)
         embed.set_thumbnail(url="https://cdn.discordapp.com/icons/889539720575590401/9c8bc412f1f5111eed5205abb2f5f921.webp?size=96")
         embed.add_field(name="Heure UTC+1", value="**__22 heures 30__**\nLes règles de scrim sont dans <#889546660189970432>", inline=False)
         embed.set_footer(text="Dera©")
