@@ -74,7 +74,7 @@ async def scrim(ctx):
         await embe.add_reaction(check)
         await embe.add_reaction(uncheck)
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
-        await ctx.send("Ici y'auras le futur everyone que je mes pas maintenant psk sinon sa va etres le zoo")
+        await ctx.send("@everyone")
 
 
 
