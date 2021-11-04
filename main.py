@@ -80,6 +80,12 @@ async def scrim(ctx, *, msg = "?"):
 
 
 
+@client.command()
+async def help(ctx):
+    await ctx.send("Pour l'instant il y a qu'une seule commande c'est +scrim (nom de la team adverse) et si elle n'ai pas deffini elle seras nommer d'un: ?")
+
+
+
 
 
 
