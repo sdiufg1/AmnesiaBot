@@ -76,7 +76,7 @@ async def scrim(ctx):
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
         await ctx.send("@everyone")
     else:
-        ctx.send("tu est dans le mauvais channel pour taper cette commande")
+        ctx.send("tu est dans le mauvais channel pour taper cette commande.")
 
 
 
