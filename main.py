@@ -38,6 +38,11 @@ async def shutdown(ctx):
 
 
 @client.command()
+async def test(ctx):
+    await ctx.send("Test reussi")
+
+
+@client.command()
 @commands.has_any_role("ScrimManager")
 async def scrim(ctx, *, msg = "?"):
     if ctx.channel.id == 905900034720145439:
