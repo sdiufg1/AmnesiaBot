@@ -75,7 +75,7 @@ async def scrim(ctx):
         await embe.add_reaction(uncheck)
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
         await ctx.send("@everyone")
-    else:
+    if ctx.channel.id != 889549859911258185:
         ctx.send("tu est dans le mauvais channel pour taper cette commande.")
 
 
