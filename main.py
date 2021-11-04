@@ -45,7 +45,7 @@ async def test(ctx):
 @client.command()
 @commands.has_any_role("ScrimManager")
 async def scrim(ctx):
-    if ctx.channel.id == 905900034720145439:
+    if ctx.channel.id == 889549859911258185:
         await ctx.channel.purge(limit=1000)
         check = discord.utils.get(client.emojis, name = "check")
         uncheck = discord.utils.get(client.emojis, name = "uncheck")
@@ -75,6 +75,8 @@ async def scrim(ctx):
         await embe.add_reaction(uncheck)
         await ctx.send("https://cdn.discordapp.com/attachments/889549859911258185/905848204191498251/image0-4.gif")
         await ctx.send("@everyone")
+    else:
+        ctx.send("tu est dans le mauvais channel pour taper cette commande")
 
 
 
