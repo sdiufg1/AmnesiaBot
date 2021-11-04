@@ -1,0 +1,4 @@
+discord.py==1.7.3
+dnspython==2.1.0
+requests==2.21.0
+requests-oauthlib==1.0.0
